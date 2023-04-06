@@ -1,0 +1,37 @@
+{
+  "name": "deficiencytracker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pdf-lib/fontkit": "^1.1.1",
+    "annotpdf": "^1.0.15",
+    "archiver": "^5.3.1",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "forever-monitor": "^3.0.3",
+    "form-data": "^4.0.0",
+    "image-watermark": "^0.0.7",
+    "log4js": "^6.5.1",
+    "node-fetch": "^2.6.7",
+    "pdf-lib": "^1.17.1",
+    "popups": "^1.1.3",
+    "prompt": "^1.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlumbingMaster/DEF.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PlumbingMaster/DEF/issues"
+  },
+  "homepage": "https://github.com/PlumbingMaster/DEF#readme",
+  "description": ""
+}

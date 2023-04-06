@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Copy of Pointed Witty Goose</title>
+    <meta property="og:title" content="Copy of Pointed Witty Goose" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <style data-section-id="dropdown">
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <img
+            alt="logo"
+            src="public/playground_assets/artboard%2B1-200h.png"
+            class="home-image"
+          />
+          <h1>RFP Generator Data Load</h1>
+        </header>
+        <div class="home-container01">
+          <div class="home-container02">
+            <div id="loginContin" class="home-container03">
+              <div class="home-container04">
+                <div class="home-container05">
+                  <input
+                    type="text"
+                    id="Username"
+                    placeholder="Username"
+                    class="home-textinput input"
+                  />
+                </div>
+                <div class="home-container06">
+                  <input
+                    type="password"
+                    id="Password"
+                    placeholder="Password"
+                    class="home-textinput1 input"
+                  />
+                </div>
+                <div class="home-container07">
+                  <button id="login_btn" class="home-button button">Login</button>
+                </div>
+              </div>
+            </div>
+            <div id="HomeContain" class="home-container08">
+              <div class="home-container09">
+                <div class="home-container10">
+                  <div class="home-container11">
+                    <div class="home-container12">
+                      <strong class="home-text01">Select Billing Period</strong>
+                      <select id="BillingP-list" class="home-select">
+         
+                      </select>
+                    </div>
+                    <div class="home-container13">
+                      <strong class="home-text02">
+                        Select Previous Budget
+                      </strong>
+                      <select id="PrevB" class="home-select1 Content">
+           
+                      </select>
+                    </div>
+                    <div class="home-container14">
+                      <strong class="home-text03">Select Current Budget</strong>
+                      <select id="CurrentB" class="home-select2 Content">
+      
+                      </select>
+                    </div>
+                    <div class="home-container15">
+                      <button id="Budget-btn" class="home-button1 button">
+                        Load Budgets
+                      </button>
+                      <span id="Budget-span" class="home-text04">&nbsp;</span>
+                    </div>
+                    <div class="home-container16">
+                      <button id="BillingP-btn" class="home-button2 button">
+                        Load Billing Periods
+                      </button>
+                      <span id="BillingP-span" class="home-text05">&nbsp;</span>
+                    </div>
+                    <div class="home-container17">
+                      <button id="Commit-btn" class="home-button3 button">
+                        Load Commitments
+                      </button>
+                      <span id="Commit-span" class="home-text06">&nbsp;</span>
+                    </div>
+                    <div class="home-container18">
+                      <button id="Dircost-btn" class="home-button4 button">
+                        Load Direct Costs
+                      </button>
+                      <span id="Dircost-span" class="home-text07">&nbsp;</span>
+                    </div>
+                    <div class="home-container19">
+                      <button id="CommitC-btn" class="home-button5 button">
+                        Load Commited Costs
+                      </button>
+                      <span id="CommitC-span" class="home-text08">&nbsp;</span>
+                    </div>
+                    <div class="home-container20">
+                      <button id="chcklmt" class="home-button6 button">
+                        Check Limit
+                      </button>
+                      <span id="chcklmt-span" class="home-text09">&nbsp;</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="header"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
