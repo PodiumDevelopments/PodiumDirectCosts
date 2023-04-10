@@ -3,7 +3,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
-
+var cors = require('cors')
 require("dotenv").config();
 const GetProcoreToken = require('./Modules/ProcoreAuth.js');
 const GetDeficiencyItems = require('./Modules/GetDeficiencyItems')
@@ -55,7 +55,7 @@ let ProcoreAuthUrl = "https://api.procore.com/oauth/token"
 global.ApiURL="https://api.procore.com"
 let ProcoreApiURL = "https://api.procore.com"
 const CompanyID = process.env.COMPANY_ID
-
+app.use(cors())
 function limitcheck(req, res, next){
     try {
     projectID=req.query.projectid  
